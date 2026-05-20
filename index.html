@@ -37,7 +37,7 @@
       scroll-behavior: smooth;
     }
 
-    /* Navigation – big and friendly */
+    /* Navigation – big and friendly, NO background images on links */
     .navbar {
       background: var(--deep-blue);
       padding: 1.2rem 2rem;
@@ -59,6 +59,8 @@
       padding: 0.4rem 0.2rem;
       transition: 0.2s;
       border-bottom: 3px solid transparent;
+      background: none;        /* remove any possible background image */
+      background-image: none;  /* explicit removal */
     }
     .navbar a:hover {
       border-bottom-color: var(--sunny-gold);
@@ -133,6 +135,7 @@
       display: inline-block;
       transition: 0.2s;
       box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+      background-image: none;  /* no image cover */
     }
     .btn:hover {
       background: var(--sunny-gold);
@@ -230,6 +233,7 @@
       gap: 1rem;
       font-size: 1.2rem;
       font-weight: 600;
+      background-image: none; /* no image cover */
     }
     .contact-card i {
       font-size: 1.8rem;
@@ -238,6 +242,8 @@
     .contact-card a {
       text-decoration: none;
       color: var(--deep-blue);
+      background: none;
+      background-image: none;
     }
 
     footer {
@@ -247,6 +253,11 @@
       color: #ffefcf;
       font-size: 1rem;
       margin-top: 3rem;
+    }
+
+    /* ensure no link anywhere has background image */
+    a, a * {
+      background-image: none !important;
     }
 
     @media (max-width: 800px) {
@@ -414,7 +425,7 @@
 </main>
 
 <footer>
-  <p>✝️ “Veritas in Caritate” – Truth in Charity. </p>
+  <p>✝️ “Veritas in Caritate” – Truth in Charity. This is my story, and it's only the beginning.</p>
   <p style="margin-top: 0.6rem;">© 2026 Don Vito Jeron L. Reyes | Made with a big heart and even bigger dreams</p>
 </footer>
 
