@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Don Vito | Future Lawyer, Professor, or Priest</title>
-  <!-- Google Fonts: more playful and readable -->
+  <title>Don Vito | Big Dreams, Bigger Heart</title>
+  <!-- Fun & readable fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -21,444 +20,412 @@
       color: #1f2e3a;
       scroll-behavior: smooth;
       line-height: 1.6;
-      font-size: 1.2rem; /* bigger base font */
+      font-size: 1.2rem;
     }
 
-    /* School-inspired but warm & playful */
+    /* Warm & playful colors */
     :root {
-      --school-blue: #1e4a76;
-      --gold-soft: #f4c542;
-      --coral: #f07c6c;
-      --cream-bg: #fff4e4;
-      --green-apple: #6b9e6b;
-      --navy-warm: #1f3b4c;
-      --shadow-playful: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+      --deep-blue: #1e4a76;
+      --sunny-gold: #f4c542;
+      --soft-coral: #f07c6c;
+      --cream: #fff4e4;
+      --leaf-green: #6b9e6b;
+      --wood-brown: #5c3e2b;
     }
 
     html {
       scroll-behavior: smooth;
     }
 
-    /* playful scrollbar */
-    ::-webkit-scrollbar {
-      width: 12px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #ffe2bf;
-      border-radius: 20px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: var(--gold-soft);
-      border-radius: 20px;
-      border: 2px solid #fff0d4;
-    }
-
-    /* Navigation - less corporate, more rounded */
+    /* Navigation – big and friendly */
     .navbar {
-      background: var(--school-blue);
-      padding: 1rem 2rem;
+      background: var(--deep-blue);
+      padding: 1.2rem 2rem;
       position: sticky;
       top: 0;
       z-index: 100;
       display: flex;
       justify-content: center;
-      gap: 1.8rem;
+      gap: 2.2rem;
       flex-wrap: wrap;
-      border-bottom: 4px solid var(--gold-soft);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-bottom: 5px solid var(--sunny-gold);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
     }
     .navbar a {
-      color: #fef2da;
+      color: #fff2dd;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       padding: 0.4rem 0.2rem;
       transition: 0.2s;
       border-bottom: 3px solid transparent;
-      font-family: 'Quicksand', sans-serif;
     }
     .navbar a:hover {
-      border-bottom-color: var(--gold-soft);
+      border-bottom-color: var(--sunny-gold);
       color: white;
       transform: translateY(-2px);
     }
 
-    /* sections */
+    /* Each section is a big, full-width block */
     section {
-      padding: 4rem 2rem;
-      max-width: 1300px;
+      padding: 4rem 5%;
+      max-width: 1400px;
       margin: 0 auto;
     }
+
     .section-title {
       font-family: 'Fredoka One', cursive;
-      font-size: 2.5rem;
-      background: linear-gradient(135deg, var(--school-blue), var(--coral));
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--deep-blue), var(--soft-coral));
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      margin-bottom: 2rem;
-      display: inline-block;
-      border-left: 8px solid var(--gold-soft);
-      padding-left: 1.2rem;
+      margin-bottom: 2.5rem;
+      border-left: 12px solid var(--sunny-gold);
+      padding-left: 1.5rem;
     }
 
-    /* Hero section - big and friendly */
+    /* Hero – big and centered */
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 3rem;
-      background: var(--cream-bg);
-      border-radius: 60px;
-      padding: 2.5rem;
-      box-shadow: var(--shadow-playful);
+      background: var(--cream);
+      border-radius: 70px;
+      padding: 3rem;
+      box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
       border: 2px solid #ffe0b5;
     }
     .hero-image img {
       width: 100%;
-      max-width: 300px;
-      border-radius: 40px;
-      box-shadow: 0 20px 30px -8px rgba(0,0,0,0.2);
-      border: 5px solid white;
+      max-width: 320px;
+      border-radius: 50px;
+      box-shadow: 0 25px 35px -10px rgba(0,0,0,0.2);
+      border: 6px solid white;
       object-fit: cover;
       aspect-ratio: 1 / 1;
-      background: #eedbc8;
     }
     .hero-text h1 {
-      font-size: 3.2rem;
+      font-size: 3.8rem;
       font-family: 'Fredoka One', cursive;
-      color: var(--school-blue);
-      letter-spacing: -0.5px;
+      color: var(--deep-blue);
+      line-height: 1.2;
     }
     .hero-text .tagline {
-      font-size: 1.5rem;
-      color: var(--coral);
+      font-size: 1.7rem;
+      color: var(--soft-coral);
       font-weight: 700;
-      margin: 0.8rem 0 1rem;
+      margin: 1rem 0 1.2rem;
     }
     .hero-text p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
     }
     .btn {
-      background: var(--green-apple);
+      background: var(--leaf-green);
       color: white;
-      padding: 0.8rem 2rem;
-      border-radius: 50px;
+      padding: 0.9rem 2.2rem;
+      border-radius: 60px;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       display: inline-block;
       transition: 0.2s;
-      border: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
     }
     .btn:hover {
-      background: var(--gold-soft);
-      color: var(--school-blue);
+      background: var(--sunny-gold);
+      color: var(--deep-blue);
       transform: scale(1.02);
     }
 
-    /* cards - big and airy */
-    .grid-2col {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 2rem;
-    }
-    .card {
+    /* Big content blocks – no small cards, each block is spacious */
+    .big-block {
       background: white;
-      border-radius: 32px;
-      overflow: hidden;
-      box-shadow: 0 15px 25px -10px rgba(0,0,0,0.08);
-      transition: all 0.2s ease;
-      border: 1px solid #ffe2bf;
+      border-radius: 50px;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.08);
+      border: 1px solid #f7e2c5;
+      transition: transform 0.2s ease;
     }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 25px 30px -12px rgba(0,0,0,0.15);
+    .big-block:hover {
+      transform: translateY(-5px);
     }
-    .card-img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      background: #efe3d4;
-    }
-    .card-content {
-      padding: 1.8rem;
-    }
-    .card-content h3 {
-      font-size: 1.9rem;
-      font-weight: 700;
-      color: var(--school-blue);
-      margin-bottom: 0.75rem;
+    .big-block h3 {
+      font-size: 2.2rem;
       font-family: 'Fredoka One', cursive;
-      letter-spacing: -0.3px;
-    }
-    .badge {
-      background: #fce5c1;
-      color: var(--school-blue);
-      font-size: 0.85rem;
-      font-weight: bold;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      display: inline-block;
+      color: var(--deep-blue);
       margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .big-block p, .big-block li {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .big-block ul {
+      margin-left: 1.8rem;
     }
     .school-logo {
-      max-width: 65px;
+      max-width: 70px;
       height: auto;
-      margin-right: 0.8rem;
       background: white;
-      border-radius: 16px;
-      padding: 4px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      padding: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      vertical-align: middle;
     }
-    .flex-row {
+    .flex-logo {
       display: flex;
       align-items: center;
-      gap: 0.8rem;
+      gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 0.5rem;
+    }
+    .img-inline {
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 40px;
+      margin-top: 1rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
     }
 
-    /* contact area playful */
-    .contact-list {
-      background: white;
-      border-radius: 48px;
-      padding: 2rem;
+    /* Two-column only for specific comparisons, but still large */
+    .two-col {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: center;
-      box-shadow: var(--shadow-playful);
-      border: 2px solid #f7e2c5;
+      gap: 2rem;
+      margin-top: 1rem;
     }
-    .contact-item {
+    .two-col > div {
+      flex: 1;
+      min-width: 260px;
+      background: #fffbf4;
+      border-radius: 40px;
+      padding: 1.8rem;
+      border: 1px solid #ffe5c2;
+    }
+
+    /* Contact area big & friendly */
+    .contact-area {
+      background: white;
+      border-radius: 70px;
+      padding: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+    }
+    .contact-card {
+      background: var(--cream);
+      padding: 1rem 2rem;
+      border-radius: 60px;
       display: flex;
       align-items: center;
-      gap: 0.8rem;
-      font-size: 1.1rem;
-      background: #fffaf0;
-      padding: 0.7rem 1.8rem;
-      border-radius: 60px;
+      gap: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
     }
-    .contact-item i {
-      font-size: 1.6rem;
-      color: var(--gold-soft);
+    .contact-card i {
+      font-size: 1.8rem;
+      color: var(--sunny-gold);
     }
-    .contact-item a {
+    .contact-card a {
       text-decoration: none;
-      color: var(--navy-warm);
+      color: var(--deep-blue);
     }
+
     footer {
       text-align: center;
-      padding: 2rem;
-      background: var(--school-blue);
-      color: #f9e5c1;
+      padding: 2.5rem;
+      background: var(--deep-blue);
+      color: #ffefcf;
       font-size: 1rem;
       margin-top: 3rem;
     }
-    @media (max-width: 750px) {
+
+    @media (max-width: 800px) {
       body { font-size: 1rem; }
-      .hero-text h1 { font-size: 2.4rem; }
-      .section-title { font-size: 2rem; }
-      .card-content h3 { font-size: 1.6rem; }
+      .section-title { font-size: 2.2rem; }
+      .hero-text h1 { font-size: 2.5rem; }
+      .big-block h3 { font-size: 1.8rem; }
+      .navbar a { font-size: 0.95rem; gap: 1rem; }
     }
   </style>
 </head>
 <body>
 
 <nav class="navbar">
-  <a href="#home">🏠 HOME</a>
-  <a href="#about">📖 ABOUT</a>
-  <a href="#education">🎓 SCHOOL</a>
-  <a href="#achievements">🏆 AWARDS</a>
-  <a href="#interests">✨ DREAMS</a>
-  <a href="#contact">📞 CONTACT</a>
+  <a href="#home"><i class="fas fa-home"></i> HOME</a>
+  <a href="#about"><i class="fas fa-user-graduate"></i> ABOUT</a>
+  <a href="#education"><i class="fas fa-school"></i> SCHOOL</a>
+  <a href="#achievements"><i class="fas fa-trophy"></i> AWARDS</a>
+  <a href="#dreams"><i class="fas fa-star"></i> DREAMS</a>
+  <a href="#contact"><i class="fas fa-address-card"></i> CONTACT</a>
 </nav>
 
 <main>
-  <!-- HERO with main photo -->
+  <!-- HERO SECTION -->
   <section id="home">
     <div class="hero">
       <div class="hero-image">
-        <img src="main photo.JPG" alt="Don Vito" onerror="this.src='https://placehold.co/400x400/ffe0b5/6b4c2c?text=Don+Vito'">
+        <img src="main photo.JPG" alt="Don Vito" onerror="this.src='https://placehold.co/400x400/f5e2cc/7a5a42?text=Don+Vito'">
       </div>
       <div class="hero-text">
-        <h1>Hey, I'm Don Vito! 👋</h1>
-        <div class="tagline">⚖️ Future Lawyer · Professor · Priest ⛪</div>
-        <p><strong>12 years old</strong> (born <strong>February 13, 2014</strong>) • From <strong>Tondo, Manila</strong> 📍</p>
-        <p>I love literature, history, and writing. I've been class president, Mr. Bosconian winner, and a journalism awardee. My heart says: study at UST and serve the truth.</p>
-        <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> Say hello!</a>
+        <h1>Don Vito Jeron L. Reyes</h1>
+        <div class="tagline">⚡ 12 years old • Born Feb 13, 2014 • From Tondo, Manila ⚡</div>
+        <p>Future lawyer, professor, or priest. Lover of literature, history, and justice. Class president, Mr. Bosconian winner, and a dreamer on a mission.</p>
+        <p>📍 Currently at <strong>Don Bosco Technical College</strong> (Grade 5 – Class of Sandor) → heading to <strong>UST</strong> from Grade 7 to college.</p>
+        <a href="#contact" class="btn"><i class="fas fa-envelope-open-text"></i> Say hello to me</a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT section - expanded with more personal details -->
+  <!-- ABOUT – big, detailed, no tiny boxes -->
   <section id="about">
-    <h2 class="section-title">🌟 A Little About Me</h2>
-    <div class="grid-2col">
-      <div class="card">
-        <div class="card-content">
-          <h3>🌆 Growing up in Tondo</h3>
-          <p>I was born on <strong>February 13, 2014</strong> in Tondo, Manila — a lively, colorful place that taught me how to be strong, kind, and hardworking. Even at 12, I know that my roots will always be my strength.</p>
-          <p>I love walking around our neighborhood, seeing everyday heroes, and dreaming about how I can help make things better when I grow up.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="photo of me in grade 4.JPG" alt="Grade 4 at Manila Cathedral" onerror="this.src='https://placehold.co/600x400/e6d5b8/5a3e2b?text=Grade+4+Memories'">
-        <div class="card-content">
-          <h3>🏫 Manila Cathedral School</h3>
-          <p>Grades 1–4. I was <strong>Class Vice President (Grade 3)</strong> and <strong>Class President (Grades 3–4)</strong>. That’s where I learned to listen, lead, and care for my classmates. I also grew in my faith and love for learning.</p>
-          <p>Their motto stays with me: <em>"Initium Sapientiae Timor Domini"</em> (The fear of the Lord is the beginning of wisdom).</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>⚙️ Don Bosco – My New Home</h3>
-          <p>I transferred to <strong>Don Bosco Technical College, Mandaluyong</strong> in Grade 5 and plan to stay until Grade 6. The Bosconian spirit of <strong>Reason, Religion, and Kindness</strong> fits me perfectly.</p>
-          <p>I'm proud to be part of the <strong>Class of Sandor</strong> — a section full of energy and brotherhood.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>📚 What I Love to Learn</h3>
-          <p><strong>Social Studies (Araling Panlipunan)</strong> is my favorite — especially history, political science, and law. I also love <strong>literature and writing</strong>. I believe that knowing the past helps us build a better future.</p>
-          <p>One day, I want to use words and wisdom to defend justice, teach young minds, or serve God as a priest — maybe all three!</p>
-        </div>
-      </div>
+    <h2 class="section-title">🌟 Who I Am & Where I Come From</h2>
+    
+    <div class="big-block">
+      <h3><i class="fas fa-map-marker-alt" style="color:var(--soft-coral);"></i> Growing up in Tondo, Manila</h3>
+      <p>I was born on <strong>February 13, 2014</strong> and raised in the vibrant streets of <strong>Tondo, Manila</strong>. It's a place that taught me early on about hard work, community, and dreaming big despite challenges. Every day, I see people helping each other — and that's why I want to serve others when I grow up.</p>
+      <p>I'm proud to say: <em>“Tondo ang ugat ko, at doon ako kumuha ng lakas.”</em> (Tondo is my root, and from there I draw my strength.)</p>
+    </div>
+
+    <div class="big-block">
+      <h3><i class="fas fa-book-open"></i> My Love for Learning & Leadership</h3>
+      <p>My favorite subject is <strong>Araling Panlipunan (Social Studies)</strong> — especially history, political science, and law. I also love literature and writing. I believe stories can change the world.</p>
+      <p>At <strong>Manila Cathedral School (Grades 1–4)</strong>, I was Class Vice President (Grade 3) and Class President (Grades 3–4). That’s where I discovered that leading with kindness is the best kind of leadership.</p>
+      <img src="photo of me in grade 4.JPG" alt="Grade 4 at Manila Cathedral" class="img-inline" onerror="this.style.display='none'">
+    </div>
+
+    <div class="big-block">
+      <h3><i class="fas fa-chalkboard-user"></i> Don Bosco – My Current Home</h3>
+      <p>I transferred to <strong>Don Bosco Technical College – Mandaluyong</strong> in Grade 5 and I'm planning to stay until Grade 6. I'm part of the <strong>Class of Sandor</strong>, a group of awesome classmates who push me to be better every day.</p>
+      <p>Last school year, I won <strong>Mr. Bosconian (Grade 5)</strong> and became <strong>4th Runner Up in the Bosconian Quill</strong> (a journalism competition). These moments remind me that I can make a difference through confidence and words.</p>
     </div>
   </section>
 
-  <!-- EDUCATION JOURNEY with both logos -->
+  <!-- EDUCATION JOURNEY (full width blocks with logos) -->
   <section id="education">
-    <h2 class="section-title">📖 My School Journey</h2>
-    <div class="grid-2col">
-      <div class="card">
-        <div class="card-content">
-          <div class="flex-row">
-            <img src="IMG_6127.png" alt="Manila Cathedral School logo" class="school-logo" onerror="this.style.display='none'">
-            <span class="badge">Grades 1–4 · 2019–2023</span>
-          </div>
-          <h3>Manila Cathedral School</h3>
-          <p>📍 Intramuros, Manila — a historic place! I was class president and learned the value of service. I also gained confidence in public speaking and leadership.</p>
-        </div>
+    <h2 class="section-title">🎓 My School Journey (So Far)</h2>
+    
+    <div class="big-block">
+      <div class="flex-logo">
+        <img src="IMG_6127.png" alt="Manila Cathedral School Logo" class="school-logo" onerror="this.style.display='none'">
+        <h3>Manila Cathedral School · 2019–2023</h3>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <span class="badge">Grade 5 – present (until Grade 6)</span>
-          <h3>Don Bosco Technical College</h3>
-          <p>📍 Mandaluyong. Class of Sandor. Mr. Bosconian Winner (Grade 5) + 4th Runner Up in Bosconian Quill (journalism). I'm growing as a writer, speaker, and young gentleman.</p>
-        </div>
+      <p><strong>Grades 1 to 4</strong> — from a shy kid to a class president. I learned about faith, discipline, and the power of serving others. Their motto: <em>“Initium Sapientiae Timor Domini”</em> (The fear of the Lord is the beginning of wisdom).</p>
+    </div>
+
+    <div class="big-block">
+      <h3>⚙️ Don Bosco Technical College · Grade 5 – present (until Grade 6)</h3>
+      <p><strong>Class of Sandor</strong> — a section full of energy and brotherhood. I'm learning technical skills + values like reason, religion, and kindness. Achievements here include Mr. Bosconian and Bosconian Quill awardee.</p>
+    </div>
+
+    <div class="big-block">
+      <div class="flex-logo">
+        <img src="1280px-Seal_of_the_University_of_Santo_Tomas.svg.png" alt="UST Seal" class="school-logo" onerror="this.style.display='none'">
+        <h3>✨ Future: University of Santo Tomas (Grade 7 → College)</h3>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="flex-row">
-            <img src="1280px-Seal_of_the_University_of_Santo_Tomas.svg.png" alt="UST seal" class="school-logo" onerror="this.style.display='none'">
-            <span class="badge">Dream School · Grade 7 to College</span>
-          </div>
-          <h3>University of Santo Tomas</h3>
-          <p>I am determined to enter UST — the oldest university in Asia. I want to study humanities, law, and theology. My three dreams: <strong>Lawyer, Professor, or Priest</strong> — UST is where I'll start.</p>
-        </div>
-      </div>
+      <p>My dream school is <strong>UST</strong> — the oldest university in Asia. I want to take up humanities, then law or theology. I believe UST will shape me into the lawyer, professor, or priest that I dream to be.</p>
+      <p><strong>Why UST?</strong> Because of its motto: <em>“Veritas in Caritate”</em> (Truth in Charity). That’s exactly how I want to live my life.</p>
     </div>
   </section>
 
-  <!-- ACHIEVEMENTS section with all your photos -->
+  <!-- ACHIEVEMENTS – each achievement gets its own large block with image -->
   <section id="achievements">
-    <h2 class="section-title">🏅 Achievements I'm Proud Of</h2>
-    <div class="grid-2col">
-      <div class="card">
-        <img class="card-img" src="mr bosconian winner.jpg" alt="Mr. Bosconian Winner" onerror="this.src='https://placehold.co/600x400/e6c9a0/4a3722?text=🏆+Mr.+Bosconian'">
-        <div class="card-content">
-          <h3>🏆 Mr. Bosconian Winner – Grade 5</h3>
-          <p>Representing Don Bosco's values with confidence, charm, and heart. This competition made me believe that I can inspire others just by being myself.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="bosconian quill winner.jpg" alt="Bosconian Quill 4th Runner Up" onerror="this.src='https://placehold.co/600x400/e6c9a0/4a3722?text=✍️+Bosconian+Quill'">
-        <div class="card-content">
-          <h3>✍️ Bosconian Quill – 4th Runner Up</h3>
-          <p>A journalism competition that tested my love for writing. It proved that my words have power. This fuels my dream to become a lawyer or professor one day.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="me as class president.JPG" alt="Class President" onerror="this.src='https://placehold.co/600x400/e6c9a0/4a3722?text=👔+Class+President'">
-        <div class="card-content">
-          <h3>👔 Class President (Grades 3–4)</h3>
-          <p>Leading my classmates at Manila Cathedral School was a big responsibility — and I loved it! It taught me empathy, public speaking, and how to solve problems calmly.</p>
-        </div>
-      </div>
+    <h2 class="section-title">🏅 My Proudest Moments</h2>
+    
+    <div class="big-block">
+      <h3>🏆 Mr. Bosconian Winner – Grade 5</h3>
+      <img src="mr bosconian winner.jpg" alt="Mr. Bosconian" class="img-inline" onerror="this.style.display='none'">
+      <p>Representing Don Bosco’s values of confidence, charm, and service. This competition taught me that being yourself is your greatest strength.</p>
+    </div>
+
+    <div class="big-block">
+      <h3>✍️ Bosconian Quill – 4th Runner Up (Journalism)</h3>
+      <img src="bosconian quill winner.jpg" alt="Bosconian Quill Award" class="img-inline" onerror="this.style.display='none'">
+      <p>A writing competition that proved my love for words can lead to amazing things. This fuels my dream to become a lawyer (using arguments) or a professor (sharing knowledge).</p>
+    </div>
+
+    <div class="big-block">
+      <h3>👔 Class President (Grades 3–4) & Vice President (Grade 3)</h3>
+      <img src="me as class president.JPG" alt="Class President photo" class="img-inline" onerror="this.style.display='none'">
+      <p>Leading my classmates at Manila Cathedral School was a big responsibility — and I loved every moment! I learned how to listen, help solve problems, and speak for others.</p>
     </div>
   </section>
 
-  <!-- INTERESTS + DREAMS (more detailed) -->
-  <section id="interests">
-    <h2 class="section-title">💭 What I Dream & Believe</h2>
-    <div class="grid-2col">
-      <div class="card">
-        <div class="card-content">
-          <h3>📖 Love for Literature & Writing</h3>
-          <p>I read stories like they're windows to different worlds. I write to express, to understand, and to remember. Subjects like History, Araling Panlipunan, and Political Science make me feel alive.</p>
-          <p>My ultimate goal? Use writing and speech to defend truth — whether in a courtroom, a classroom, or a parish.</p>
-        </div>
+  <!-- DREAMS & INTERESTS – spacious and full of heart -->
+  <section id="dreams">
+    <h2 class="section-title">💭 My Three Callings & What I Love</h2>
+    
+    <div class="two-col">
+      <div>
+        <h3><i class="fas fa-gavel"></i> Lawyer</h3>
+        <p>I want to defend the truth, fight for justice, and help people who cannot speak for themselves. The law is a tool for fairness.</p>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>⚖️ Lawyer, Professor, or Priest</h3>
-          <p>I don't see these as separate — I see them as one mission: <strong>to serve people with knowledge, faith, and justice.</strong><br>
-          - As a <strong>lawyer</strong>, I'll defend the voiceless.<br>
-          - As a <strong>professor</strong>, I'll inspire the young.<br>
-          - As a <strong>priest</strong>, I'll guide souls to God.<br>
-          UST will be my training ground from Grade 7 through college.</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-chalkboard"></i> Professor</h3>
+        <p>I love teaching and sharing knowledge. As a professor, I can inspire young minds — especially in history, literature, or political science.</p>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>🇵🇭 My Filipino Heart</h3>
-          <p>I am proud to be from Tondo, Manila. I want to serve my country someday by helping improve education, justice, and community life. My journey is just beginning, but my heart is already in the right place.</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-church"></i> Priest</h3>
+        <p>To serve God and the community, bringing faith and compassion to those who need it. A life of prayer and service is a beautiful path.</p>
       </div>
+    </div>
+
+    <div class="big-block" style="margin-top: 2rem;">
+      <h3><i class="fas fa-heart" style="color:var(--soft-coral);"></i> My Favorite Subjects & Interests</h3>
+      <ul>
+        <li><strong>Araling Panlipunan (Social Studies)</strong> – especially history, political science, and law</li>
+        <li><strong>Literature and Writing</strong> – I read novels, essays, and even legal articles for fun</li>
+        <li><strong>Public Speaking & Debate</strong> – because words can change minds</li>
+      </ul>
+      <p>I believe that understanding the past helps us build a better future. That's why I study history so seriously — and why I want to be a lawyer or professor someday.</p>
     </div>
   </section>
 
-  <!-- CONTACT with all info -->
+  <!-- CONTACT - big, friendly, easy to read -->
   <section id="contact">
-    <h2 class="section-title">📫 Let's Keep in Touch</h2>
-    <div class="contact-list">
-      <div class="contact-item">
+    <h2 class="section-title">📬 Let's Connect! I'd love to hear from you.</h2>
+    <div class="contact-area">
+      <div class="contact-card">
         <i class="fas fa-envelope"></i>
         <a href="mailto:dvjlreyes@dbtcmandaluyong.one-bosco.org">dvjlreyes@dbtcmandaluyong.one-bosco.org</a>
       </div>
-      <div class="contact-item">
+      <div class="contact-card">
         <i class="fas fa-phone-alt"></i>
         <a href="tel:+9456634331">+945 663 4331</a>
       </div>
-      <div class="contact-item">
+      <div class="contact-card">
         <i class="fab fa-facebook"></i>
         <a href="https://facebook.com/ReyesDonVic" target="_blank">facebook.com/ReyesDonVic</a>
       </div>
     </div>
-    <p style="text-align: center; margin-top: 2.5rem; font-size: 1.1rem; background: #fff0db; padding: 1rem; border-radius: 60px; max-width: 500px; margin-left: auto; margin-right: auto;">
-      <i class="fas fa-birthday-cake"></i> Born: February 13, 2014 · Age 12 · Tondo, Manila
-    </p>
+    <div style="text-align: center; margin-top: 2rem; font-size: 1.2rem; background: #fff0db; padding: 1.2rem; border-radius: 60px;">
+      <i class="fas fa-birthday-cake"></i> Born February 13, 2014 · Age 12 · From Tondo, Manila · Future Thomasian
+    </div>
   </section>
 </main>
 
 <footer>
-  <p>✝️ “Veritas in Caritate” – Truth in Charity. This is my story, and it's only the beginning.</p>
-  <p style="margin-top: 0.8rem;">© 2026 Don Vito Jeron L. Reyes | Made with a schoolboy's heart and big dreams</p>
+  <p>✝️ “Veritas in Caritate” – Truth in Charity. </p>
+  <p style="margin-top: 0.6rem;">© 2026 Don Vito Jeron L. Reyes | Made with a big heart and even bigger dreams</p>
 </footer>
 
 <script>
-  // active nav highlight
+  // simple active nav highlight
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navbar a");
   window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 130;
       if (pageYOffset >= sectionTop) {
         current = section.getAttribute("id");
       }
