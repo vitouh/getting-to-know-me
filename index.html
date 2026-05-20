@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Don Vito Jeron L. Reyes | Student Portfolio</title>
+  <!-- Google Fonts + smooth scroll -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fefaf5;
+      color: #1e2a3e;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    /* School colors: navy & gold */
+    :root {
+      --navy: #0b2f5c;
+      --gold: #c9a03d;
+      --gold-light: #e9d6a7;
+      --cream: #fff9ef;
+      --burgundy: #7a2e3e;
+      --slate: #2c3e50;
+      --light-gray: #f2eee9;
+      --shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e2dfda;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 10px;
+    }
+
+    /* Navigation */
+    .navbar {
+      background: rgba(11, 47, 92, 0.96);
+      backdrop-filter: blur(6px);
+      padding: 0.9rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.4rem 0;
+      transition: 0.2s;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid transparent;
+    }
+    .navbar a:hover, .navbar a.active {
+      border-bottom-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      border-left: 6px solid var(--gold);
+      padding-left: 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+      background: linear-gradient(135deg, #fff4e8 0%, #faeedf 100%);
+      border-radius: 40px;
+      padding: 2rem;
+      margin-top: 1rem;
+      box-shadow: var(--shadow);
+    }
+    .hero-image {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 32px;
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
+      border: 4px solid white;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      background: #e2d5c0;
+    }
+    .hero-text {
+      flex: 2;
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+      font-family: 'Playfair Display', serif;
+      color: var(--navy);
+    }
+    .hero-text .tagline {
+      font-size: 1.2rem;
+      color: var(--burgundy);
+      margin: 0.5rem 0 1rem;
+      font-weight: 500;
+    }
+    .hero-text p {
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+      margin-top: 0.8rem;
+    }
+    .btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* cards grid */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      border: 1px solid #f0e5d8;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #e9e0d3;
+      display: block;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .card-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--navy);
+    }
+    .badge {
+      background: var(--gold-light);
+      color: var(--navy);
+      font-size: 0.7rem;
+      font-weight: bold;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 0.7rem;
+    }
+    .school-logo {
+      max-width: 70px;
+      height: auto;
+      margin-right: 1rem;
+      vertical-align: middle;
+      border-radius: 12px;
+      background: white;
+      padding: 4px;
+    }
+    .flex-row {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+    }
+
+    /* contact */
+    .contact-list {
+      background: white;
+      border-radius: 32px;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      justify-content: center;
+      box-shadow: var(--shadow);
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1rem;
+      background: var(--cream);
+      padding: 0.7rem 1.5rem;
+      border-radius: 60px;
+    }
+    .contact-item i {
+      font-size: 1.4rem;
+      color: var(--gold);
+    }
+    .contact-item a {
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--navy);
+      color: #cddde9;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 750px) {
+      .hero { flex-direction: column; text-align: center; }
+      .section-title { font-size: 1.8rem; }
+      .navbar { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#education">EDUCATION</a>
+  <a href="#achievements">ACHIEVEMENTS</a>
+  <a href="#interests">INTERESTS & DREAMS</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<main>
+  <!-- Hero / Home section with main photo -->
+  <section id="home">
+    <div class="hero">
+      <div class="hero-image">
+        <!-- MAIN PHOTO (grade 5 / current portrait) -->
+        <img src="main photo.JPG" alt="Don Vito Jeron L. Reyes - main portrait" onerror="this.onerror=null; this.src='https://placehold.co/400x400/f2eee9/7a6a5a?text=📸+Main+Photo';">
+      </div>
+      <div class="hero-text">
+        <h1>Don Vito Jeron L. Reyes</h1>
+        <div class="tagline">✦ 12 years old | Future Lawyer, Professor, or Priest ✦</div>
+        <p>Growing up in the heart of <strong>Tondo, Manila</strong>, with a passion for literature, history, and justice. Currently shaping my journey at <strong>Don Bosco Technical College</strong> — dreaming of UST and a life dedicated to truth and service.</p>
+        <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> Connect with me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT section: Tondo, age, background -->
+  <section id="about">
+    <h2 class="section-title">📖 Who I Am</h2>
+    <div class="grid-2col">
+      <div class="card">
+        <div class="card-content">
+          <h3>From Tondo, Manila</h3>
+          <p>I grew up in <strong>Tondo, Manila</strong> — a place that taught me resilience, community, and the value of hard work. I am 12 years old, and my story is shaped by faith, family, and the love of learning. Tondo is my roots; the world is my classroom.</p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- Grade 4 photo from Manila Cathedral School -->
+        <img class="card-img" src="photo of me in grade 4.JPG" alt="Don Vito in Grade 4" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=padding:1.5rem;text-align:center><i class=fas fa-image></i><p>Grade 4 photo</p></div>'+this.parentElement.innerHTML;">
+        <div class="card-content">
+          <h3>Manila Cathedral School</h3>
+          <p><strong>Grades 1–4</strong><br>Class Vice President (Gr.3) & Class President (Gr.3–4). A place where I first discovered leadership and the joy of serving classmates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION timeline with both logos -->
+  <section id="education">
+    <h2 class="section-title">🎓 My School Journey</h2>
+    <div class="grid-2col">
+      <!-- Manila Cathedral School card + logo -->
+      <div class="card">
+        <div class="card-content">
+          <div class="flex-row">
+            <img src="IMG_6127.png" alt="Manila Cathedral School Logo" class="school-logo" onerror="this.style.display='none'">
+            <span class="badge">2019–2023</span>
+          </div>
+          <h3>Manila Cathedral School</h3>
+          <p><i class="fas fa-users"></i> Class Vice President (Gr.3) & President (Gr.3–4)<br>Built my foundation in values, academics, and public speaking. <em>"Initium Sapientiae Timor Domini"</em> (The fear of the Lord is the beginning of wisdom).</p>
+        </div>
+      </div>
+      <!-- Don Bosco card -->
+      <div class="card">
+        <div class="card-content">
+          <span class="badge">2024 – present</span>
+          <h3>Don Bosco Technical College – Mandaluyong</h3>
+          <p><strong>Grade 5 (Class of Sandor)</strong> → planning to stay until Grade 6.<br>🏆 Mr. Bosconian Winner (Grade 5) & 4th Runner Up – Bosconian Quill (journalism).</p>
+        </div>
+      </div>
+      <!-- Class of Sandor section (no placeholder image, just text) -->
+      <div class="card">
+        <div class="card-content">
+          <h3>Class of Sandor · Grade 5</h3>
+          <p>One of the most memorable sections — full of energy, brotherhood, and Bosconian spirit. I grew so much here as a student and leader.</p>
+        </div>
+      </div>
+      <!-- UST dream with official seal -->
+      <div class="card">
+        <div class="card-content">
+          <div class="flex-row">
+            <img src="1280px-Seal_of_the_University_of_Santo_Tomas.svg.png" alt="University of Santo Tomas Seal" class="school-logo" onerror="this.style.display='none'">
+            <span class="badge">Future Thomasian</span>
+          </div>
+          <h3>Next stop: UST (Grade 7 → College)</h3>
+          <p>I am determined to enter the <strong>University of Santo Tomas</strong> to pursue law, humanities, and theology — aiming to become a lawyer, professor, or priest. <em>“Veritas in Caritate”</em> (Truth in Charity).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS section: Mr. Bosconian, Bosconian Quill, Class President photo -->
+  <section id="achievements">
+    <h2 class="section-title">🏅 Milestones & Awards</h2>
+    <div class="grid-2col">
+      <!-- Mr. Bosconian Winner -->
+      <div class="card">
+        <img class="card-img" src="mr bosconian winner.jpg" alt="Mr. Bosconian Winner" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=padding:1.5rem;text-align:center><i class=fas fa-trophy></i><p>Mr. Bosconian Winner photo</p></div>'+this.parentElement.innerHTML;">
+        <div class="card-content">
+          <h3>🏆 Mr. Bosconian Winner – Grade 5</h3>
+          <p>A proud moment representing Don Bosco’s values: reason, religion, and kindness. This competition pushed me to be confident and charismatic.</p>
+        </div>
+      </div>
+      <!-- Bosconian Quill -->
+      <div class="card">
+        <img class="card-img" src="bosconian quill winner.jpg" alt="Bosconian Quill 4th Runner Up" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=padding:1.5rem;text-align:center><i class=fas fa-feather-alt></i><p>Bosconian Quill award photo</p></div>'+this.parentElement.innerHTML;">
+        <div class="card-content">
+          <h3>✍️ Bosconian Quill – 4th Runner Up</h3>
+          <p>Journalistic writing competition — my love for literature and writing in action! A big step toward my dream of becoming a professor or lawyer.</p>
+        </div>
+      </div>
+      <!-- Class President photo (leadership) -->
+      <div class="card">
+        <img class="card-img" src="me as class president.JPG" alt="Don Vito as Class President" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=padding:1.5rem;text-align:center><i class=fas fa-chalkboard-user></i><p>Class President photo</p></div>'+this.parentElement.innerHTML;">
+        <div class="card-content">
+          <h3>✨ Class President (Grades 3–4)</h3>
+          <p>Leading my classmates at Manila Cathedral School taught me responsibility, empathy, and how to speak for others — early signs of a future public servant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS + DREAMS (literature, history, law, UST) -->
+  <section id="interests">
+    <h2 class="section-title">📚 Interests & Vocation</h2>
+    <div class="grid-2col">
+      <div class="card">
+        <div class="card-content">
+          <h3><i class="fas fa-book-open"></i> Literature & Writing</h3>
+          <p>I live for stories, from classic novels to historical documents. Subjects like <strong>Araling Panlipunan</strong> (Social Studies) fire up my curiosity — especially history, political science, and law. Writing gives me a voice.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3><i class="fas fa-scale-balanced"></i> Three Callings, One Heart</h3>
+          <p><strong>Lawyer</strong> to defend the truth. <strong>Professor</strong> to inspire young minds. <strong>Priest</strong> to serve God and community. I want to combine intellect and faith — that's why UST is my path from Grade 7 to college.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT section with all details -->
+  <section id="contact">
+    <h2 class="section-title">📬 Let's Connect</h2>
+    <div class="contact-list">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:dvjlreyes@dbtcmandaluyong.one-bosco.org">dvjlreyes@dbtcmandaluyong.one-bosco.org</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:+9456634331">+945 663 4331</a>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-facebook"></i>
+        <a href="https://facebook.com/ReyesDonVic" target="_blank">Reyes Don Vic</a>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #5a6e7a;"><i class="fas fa-globe-asia"></i> Tondo, Manila · Don Bosco Mandaluyong · Future Thomasian</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Don Vito Jeron L. Reyes — built with ✍️ and a schoolboy's dream. “Veritas et Caritas”</p>
+  <p style="margin-top: 0.5rem; font-size: 0.7rem;">📸 Photos: main photo.JPG, me as class president.JPG, mr bosconian winner.jpg, bosconian quill winner.jpg, photo of me in grade 4.JPG · Logos: IMG_6127.png, 1280px-Seal_of_the_University_of_Santo_Tomas.svg.png</p>
+</footer>
+
+<script>
+  // Highlight active nav while scrolling
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navbar a");
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+</body>
+</html>
