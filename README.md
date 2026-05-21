@@ -1,6 +1,6 @@
-# Don Vito Jeron L. Reyes — Personal Website
+# Don Vito Reyes — Personal Website
 
-A personal portfolio website for Don Vito Jeron L. Reyes.
+This is personal portfolio website by me.
 
 ---
 
@@ -30,48 +30,11 @@ Place ALL of the following image files in the **SAME folder** as `index.html`:
 | `1280px-Seal_of_the_University_of_Santo_Tomas.svg.png` | Education timeline (UST logo) |
 | `Don_Bosco_Mandaluyong_Logo 2` | Education timeline (DBTC logo) |
 
-> ⚠️ **Important:** The filenames must match EXACTLY (including spaces and capitalization).
+
 
 ---
-
-## 🚀 How to Upload to GitHub Pages
-
-### Step 1 — Create a GitHub Repository
-1. Go to [github.com](https://github.com) and sign in (or create an account).
-2. Click the **+** button → **New repository**.
-3. Name it: `your-username.github.io` *(replace "your-username" with your actual GitHub username)*.
-4. Set it to **Public**.
-5. Click **Create repository**.
-
-### Step 2 — Upload Your Files
-1. Inside your new repository, click **Add file → Upload files**.
-2. Drag and drop ALL files into the upload area:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-   - All image files listed above
-3. Scroll down, write a commit message like `"Upload website files"`.
-4. Click **Commit changes**.
-
-### Step 3 — Enable GitHub Pages
-1. In your repository, click **Settings** (top menu).
-2. On the left sidebar, click **Pages**.
-3. Under **Source**, select **Deploy from a branch**.
-4. Set the branch to **main** and folder to **/ (root)**.
-5. Click **Save**.
-
-### Step 4 — Visit Your Website
-- Wait 1–2 minutes for GitHub to deploy.
-- Your website will be live at: `https://your-username.github.io`
-
+## 🎙️ What is this for?
+This website is built to get to know me for people who dont, more importantly i think this is a much more efficient way in introducing myself to people rather than being awkward when it gets to the stage.
 ---
 
-## 🎨 Customization Tips
-
-- To change colors, edit the CSS variables at the top of `style.css` (under `:root`).
-- To add or remove sections, edit `index.html`.
-- To update contact info, search for the contact section in `index.html`.
-
----
-
-*Made with ❤️ for Don Vito Jeron L. Reyes*
+*Made with ❤️ by Don Vito Jeron L. Reyes*
